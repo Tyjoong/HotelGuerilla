@@ -1,0 +1,77 @@
+
+package important33;
+
+import java.util.Scanner;
+
+/**
+ *Salma Cahyaningtyas
+ * X RPL 6 / 36
+ */
+public class Important33 {
+
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        String room;
+        int harga, lama, total;
+        boolean repeat=true;
+        
+        do{
+        System.out.println("SELAMAT DATANG DI HOTEL GUERILLA");
+        System.out.println("HOTEL TERBAIK DI DYSTOPIA");
+        System.out.println("LIST TIPE KAMAR KAMI");
+        System.out.println("=====================================");
+        System.out.println("Tipe 1 ==> 5.000.000/hari");
+        System.out.println("Tipe 2 ==> 4.000.000/hari");
+        System.out.println("Tipe 3 ==> 3.000.000/hari");
+        System.out.println("Tipe 4 ==> 2.000.0000/hari");
+        System.out.println("Tipe 5 ==> 1.000.000/hari");
+        System.out.println("=====================================");
+        System.out.println("Mausukkan Tipe Kamar Yang Ingin di Pesan: ");
+        room=input.nextLine();
+        
+        if(room.equalsIgnoreCase("Tipe 1"))
+        {
+            System.out.println("Lama Anda Meninap: ");
+            lama=input.nextInt();
+            total=5000000*lama;
+            System.out.println("Harga Yang Harus Anda Bayar: "+total);
+        }else if(room.equalsIgnoreCase("Tipe 2"))
+        {
+            System.out.println("Lama Anda Menginap: ");
+            lama=input.nextInt();
+            total=4000000*lama;
+            System.out.println("Harga Yang Harus Anda Bayar: "+total);  
+        }else if(room.equalsIgnoreCase("Tipe 3"))
+        {
+            System.out.println("Lama Anda Menginap: ");
+            lama=input.nextInt();
+            total=3000000*lama;
+            System.out.println("Harga Yang Harus Anda Bayar: "+total);
+        }else if(room.equalsIgnoreCase("Tipe 4"))
+        {
+            System.out.println("Lama Menginap: ");
+            lama=input.nextInt();
+            total=2000000*lama;
+            System.out.println("Harga Yang Harus Anda Bayar: "+total);
+        }else if(room.equalsIgnoreCase("Tipe 5"))
+        {
+            System.out.println("Lama Menginap: ");
+            lama=input.nextInt();
+            total=1000000*lama;
+            System.out.println("Harga Yang Harus Anda Bayar: "+total);
+        }
+        
+            System.out.println("=====================================");
+            
+            System.out.println("Apakah Anda Ingin Mengulang? ");
+            String rep=input.nextLine();
+            
+            if(rep.equalsIgnoreCase("tidak"))
+            {
+                repeat=false;
+            }
+            
+        }while(repeat==true);
+    }
+    
+}
